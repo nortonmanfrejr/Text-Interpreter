@@ -1,0 +1,15 @@
+Lista de documentos e/ou contexto que nós iriamos avaliar, para definir oque seria chamado para nossa necessidade,
+Essas informações normalmente serão validadas na tabela CHATLOG, onde tera um campo FK definindo qual Contexto
+o texto se enquadra. Assim dando continuidade.
+
+Acho que o campo devera permitir NULL, e/ou antes de salvar ele em nosso CHATLOG devemos avaliar e pegar o valor
+de probabilidade contextual mais alto dele e SETAR esse valor antes de INSERIR e/ou fazer um alter depois, (Prefiro
+fazer a validação de probabilidade antes de INSERIR pois assim não teriamos que gastar processamento atoa);
+
+" ------------------------------------------------- "
+
+O Vectorizer vai servir para nós vermos a taxa de frequência de palavras nos textos já existentes e no novo texto a ser inserido
+para definirmos o contexto da resposta.
+
+Tendo em mente que algumas palavras, contexto e subcontexts a IA deve verificar a sua existencia em nossas bolsas.
+Caso tenha alguma duvida sobre essa implementação a partir de frequencia pesquise por (Tf_IDF)

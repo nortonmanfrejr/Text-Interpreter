@@ -1,0 +1,22 @@
+---------- Libs
+
+scikit-learn
+matplotlib
+
+Futuramente quem sabe: NLTK (Utilizado para realizar um pré-processamento do nosso textos, para nós utilizarmos com o scikit-learn)
+
+
+--------- UPGRADE IN PIP
+
+python.exe pip 
+
+--------- INSTALL SCIKIT-LEARN AFTER UPGRADE IN PIP
+
+//* Ao rodar o código a baixo o pip ira automaticamente instalar a versão mais recente do pacote que voce deseja
+junto com suas dependencias...
+
+Run in Terminal : pip install sickit-learn
+
+---------- INSTALL MATPLOTLIB
+
+Run in Terminal : pip install -u matplotlib

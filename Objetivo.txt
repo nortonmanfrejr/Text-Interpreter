@@ -1,0 +1,43 @@
+----
+
+------------------------ Principais 
+
+1 - Integrar ferramenta com nossos dados 
+(A integração com nossos dados será feita após termos um modelo inicial do nosso interpretador de texto).
+
+2 - Palavras especificas para um cliente
+(Um cliente pode ter uma palavra interna específica para alguns casos 
+
+EX: Faturamento é usado na empresa X, 
+mas na empresa Y utilizamos Provento e/ou uma palavra interna (Tombamento e etc...),
+caso seja uma dessas palavras específicas e que o interpretador não reconheca em nossos dados, ele ira inserir em nossa (bolsa de palavras).
+
+A Tabela de Bolsa de Palavras deve obrigatóriamente ter 2 campos, sendo (PALAVRA, e PALAVRA-ASSOCIADA).
+Sempre que formos utilizar uma desses palavras especificas por cliente a IA fara uma verificação na PALAVRA-ASSOCIADA e ira retornar um contexto a partir dela, independente da Situação nossas verificações sempre serão feitas através da PALAVRA-ASSOCIADA.
+
+)
+
+3 - Contexto (CADASTRO, DASHBOARD, BOLSA DE VALORES, BUSCA DE ARQUIVOS)
+
+Obs: A IA devera levar o contextos a mensagem anteriores da sessão da conversa, caso não for uma pergunta direta (Relatorio de - até), a IA ira fazer uma pergunta (Você deseja um relatório de (Produção,Vendas,Faturamento,Gastos e etc...) e/ou demostrar uma lista de TAGS com as possibilidades de relatórios que temos em nossos sistema EX:
+([Produção],[Vendas],[Faturamento],[Gasto a Receber],[Gastos a Pagar]).
+Essa observação tem de levar em Consideração o ADICIONAL 1 também).
+
+Resumo: Caso a IA não consiga gerar o resultado final logo de inicio ela ira dar uma resposta de Qual Relatório e/ou Qual Período...
+------------------------ Secundario
+
+1 - Buscar por razão social da Empresa 
+2 - Cadastros de Tabela Simples
+
+3 - Seguranca, o usúario pode receber a resposta/solicitação
+
+------------------------ Adicionais
+
+1 - Levar me consideração a tela em que o usúario está.. 
+
+(Ex: Se o usúario estiver na tela de pedidos e perguntar o FATURAMENTO, levar o faturamento de pedidos).
+(Ex: Se o usúario estiver na tela de pedidos e perguntar o MEU FATURAMENTE, levar o faturamento de pedidos do usúario da sessão)
+
+
+
+

@@ -1,0 +1,20 @@
+---- METHOD TF-IDF
+
+TF  = Frequência do Termo
+IDF = Num de documentos que contem TF
+N  = Total de Docs
+
+Wx,y = TFx,y X log(N/DFx)
+
+Packages Needs Stud
+
+sklearn.datasets
+sklearn.feature_extraction.text
+sklearn.linear_model
+sklearn.neural.network
+sklearn.metrics
+sklearn
+
+matplotlib
+
+
